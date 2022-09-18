@@ -26,5 +26,5 @@ poetry run sample-amazon-data \
 Setup Label Studio:
 
 ```bash
-docker run -it -p 8080:8080 -v `pwd`/data/label-studio:/label-studio/data heartexlabs/label-studio:latest
+docker run -it -p 8080:8080 -e EXPERIMENTAL_FEATURES=1 -v `pwd`/data/label-studio:/label-studio/data heartexlabs/label-studio:latest
 ```
