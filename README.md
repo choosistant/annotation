@@ -22,3 +22,9 @@ poetry run sample-amazon-data \
     --n-negative-reviews 2 \
     --random-seed 68792281
 ```
+
+Setup Label Studio:
+
+```bash
+docker run -it -p 8080:8080 -v `pwd`/data/label-studio:/label-studio/data heartexlabs/label-studio:latest
+```
