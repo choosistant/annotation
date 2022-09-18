@@ -23,10 +23,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Set up Python 3.8
+      - name: Extract Python version.
+        run: |
+          PROJECT_PYTHON_VERSION=$(cat .python-version)
+          echo "PROJECT_PYTHON_VERSION=$PROJECT_PYTHON_VERSION" >> $GITHUB_ENV
+
+      - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8.13
+          python-version: ${{ env.VERSION }}
 
       - name: Install poetry
         uses: snok/install-poetry@v1
