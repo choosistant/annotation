@@ -25,13 +25,13 @@ jobs:
 
       - name: Extract Python version.
         run: |
-          PROJECT_PYTHON_VERSION=$(cat .python-version)
-          echo "PROJECT_PYTHON_VERSION=$PROJECT_PYTHON_VERSION" >> $GITHUB_ENV
+          echo "PROJECT_PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
 
       - name: Set up Python
-        uses: actions/setup-python@v1
+        id: setup-python
+        uses: actions/setup-python@v2
         with:
-          python-version: ${{ env.VERSION }}
+          python-version: ${{ env.PROJECT_PYTHON_VERSION }}
 
       - name: Install poetry
         uses: snok/install-poetry@v1
