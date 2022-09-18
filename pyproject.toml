@@ -1,15 +1,18 @@
 [tool.poetry]
-name = "choosistant-template"
+name = "choosistant-annotation"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = [
+    "Omar Ali Sheikh <sheikhomar@users.noreply.github.com>"
+]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "src"}]
+packages = [
+    {include = "src"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.1.3"
