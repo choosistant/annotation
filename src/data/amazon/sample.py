@@ -1,6 +1,8 @@
 import json
+import random
 from cmath import inf
 from pathlib import Path
+from typing import List
 
 import click
 import numpy as np
@@ -29,8 +31,9 @@ class AmazonReviewDataSampler:
     ) -> None:
         self._input_path = Path(input_path)
         self._min_word_count = min_word_count
-        if random_seed == 0:
-            random_seed = None
+        if random_seed is None or random_seed == 0:
+            random_seed = random.randint(1, 2**32 - 1)
+        self._random_seed = random_seed
         self._random_gen = np.random.default_rng(seed=random_seed)
         self._beta = beta
         self._n_items = n_items
@@ -55,14 +58,24 @@ class AmazonReviewDataSampler:
             name_prefix = name_prefix[:-5]
 
         # Save the sampled reviews to disk
+        generated_file_paths: List[Path] = []
         records = df_sampled_reviews.reset_index().to_dict(orient="records")
         for record in records:
             file_path = self._output_dir / f"{name_prefix}-{record['index']}.json"
+
             # Convert timestamp to JSON serializable format
             record["reviewed_at"] = record["reviewed_at"].isoformat()
-            print(record)
+
             with open(file_path, "w") as f:
                 json.dump(record, f, indent=2)
+
+            # Record generated file path
+            generated_file_paths.append(file_path)
+
+        # Save the list of generated file paths to disk
+        gen_file_name = f"{name_prefix}-generated-files-rs{self._random_seed}.txt"
+        with open(self._output_dir / gen_file_name, "w") as f:
+            f.write("\n".join([str(p.absolute()) for p in generated_file_paths]))
 
     def sample(self) -> pd.DataFrame:
         """Sample a subset of the reviews."""
