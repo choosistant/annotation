@@ -1,0 +1,21 @@
+{
+  "index": 7987,
+  "reviewerID": "A3HJHV83O2U8BL",
+  "asin": "B0009VU7QC",
+  "reviewerName": "Robert A. Grossman",
+  "helpful": [
+    1,
+    1
+  ],
+  "reviewText": "I've been using a Dymo LabelWriter Twin Turbo for about three years. I accidentally plugged in the wrong type of AC adapter into my USB hub and \"poof\" my printer blew out. So I ordered a new one. I can tell you that for a small home office environment and postage printing, this printer will do the trick. The latest software synchronizes with your Outlook Contacts so it is \"easy breezy\" to create address labels for those who are in your Outlook address book.I just received my replacement and there's a problem with the installation, at least for Windows 7. The disk that comes with the printer installs the software (addressing & stamps) but does NOT install the driver. If you buy this printer and are running Windows 7 here's what you need to do:Go to Dymo's Website ([...]) and click on \"support - drivers & downloads\". From here you can download the latest software AND drivers and you'll be good to go. If this is a first time installation, don't plug in the USB printer cable until prompted to do so by the software download.So, aside from the installation problem, this is a printer you can count on for the long haul; provided you don't do something stupid like I did and blow it out with an incorrect AC adapter. :-( LOL!",
+  "overall": 5,
+  "summary": "Workhorse of a printer: but IMPORTANT NOTE FOR WINDOWS 7 INSTALLATION",
+  "unixReviewTime": 1280188800,
+  "reviewTime": "07 27, 2010",
+  "reviewed_at": "2010-07-27T00:00:00",
+  "feedback_count": 1,
+  "feedback_helpful_count": 1,
+  "feedback_unhelpful_count": 0,
+  "feedback_helpful_ratio": 1.0,
+  "review_text_word_count": 223
+}
