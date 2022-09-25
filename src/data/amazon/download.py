@@ -51,7 +51,7 @@ class AmazonReviewDataDownloader:
 
     def run(self):
         for category in self._selected_categories:
-            file_name = f"reviews-{category.slug}-{category.reviews_count}.json"
+            file_name = f"reviews-{category.slug}-{category.reviews_count}.json.gz"
             output_file_path = self._output_dir / file_name
             self._download_file(
                 url=category.reviews_url, output_file_path=output_file_path
