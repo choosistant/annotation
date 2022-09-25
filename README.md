@@ -1,4 +1,6 @@
-# Annotation
+# Annotation Preparation
+
+This repo contains code for preparing data for annotation.
 
 Download Amazon data:
 
@@ -21,10 +23,4 @@ poetry run sample-amazon-data \
     --n-items 5 \
     --n-positive-reviews 2 \
     --n-negative-reviews 2
-```
-
-Setup Label Studio:
-
-```bash
-docker run -it -p 8080:8080 -e EXPERIMENTAL_FEATURES=1 -v `pwd`/data/label-studio:/label-studio/data heartexlabs/label-studio:latest
 ```
