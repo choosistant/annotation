@@ -14,7 +14,7 @@ DEFAULT_BETA = 0.4
 DEFAULT_NUM_ITEMS = 5
 DEFAULT_NUM_POSITIVE_REVIEWS = 2
 DEFAULT_NUM_NEGATIVE_REVIEWS = 2
-DEFAULT_RANDOM_SEED = 68792281
+DEFAULT_RANDOM_SEED = 0
 
 
 class AmazonReviewDataSampler:
@@ -33,6 +33,7 @@ class AmazonReviewDataSampler:
         self._min_word_count = min_word_count
         if random_seed is None or random_seed == 0:
             random_seed = random.randint(1, 2**32 - 1)
+            print(f"Random seed not specified. Using random seed: {random_seed}")
         self._random_seed = random_seed
         self._random_gen = np.random.default_rng(seed=random_seed)
         self._beta = beta
@@ -48,8 +49,6 @@ class AmazonReviewDataSampler:
     def run(self) -> None:
         df_sampled_reviews = self.sample()
 
-        print(df_sampled_reviews.sort_values("asin"))
-
         self._output_dir.mkdir(parents=True, exist_ok=True)
 
         # Create a name prefix based on input file name
@@ -59,7 +58,7 @@ class AmazonReviewDataSampler:
 
         # Save the sampled reviews to disk
         generated_file_paths: List[Path] = []
-        records = df_sampled_reviews.reset_index().to_dict(orient="records")
+        records = df_sampled_reviews.fillna("").reset_index().to_dict(orient="records")
         for record in records:
             file_path = self._output_dir / f"{name_prefix}-{record['index']}.json"
 
@@ -124,8 +123,6 @@ class AmazonReviewDataSampler:
         return pd.concat([df_sampled_neg_reviews, df_sampled_pos_reviews])
 
     def _filter_reviews(self, df_data: pd.DataFrame) -> pd.DataFrame:
-        n_before = len(df_data)
-
         # Remove data where review text is missing
         df_data = df_data[~df_data["reviewText"].isnull()]
 
@@ -134,10 +131,6 @@ class AmazonReviewDataSampler:
 
         # Remove reviews which have too few (e.g. 5) words in the review text
         df_data = df_data[df_data["review_text_word_count"] >= self._min_word_count]
-
-        n_after = len(df_data)
-
-        print(f"Number of rows removed after cleaning: {n_before - n_after}")
 
         return df_data.copy()
 
@@ -194,14 +187,12 @@ class AmazonReviewDataSampler:
         # Parse the review time column
         df_data["reviewed_at"] = pd.to_datetime(df_data["unixReviewTime"], unit="s")
 
-        # Process the feedback data around each review text
-        df_data["feedback_count"] = df_data["helpful"].apply(lambda x: x[1])
-        df_data["feedback_helpful_count"] = df_data["helpful"].apply(lambda x: x[0])
-        df_data["feedback_unhelpful_count"] = df_data["helpful"].apply(
-            lambda x: x[1] - x[0]
-        )
-        df_data["feedback_helpful_ratio"] = df_data["helpful"].apply(
-            lambda x: x[0] / x[1] if x[1] > 0 else 0
+        # Make sure the review text is a string
+        df_data["reviewText"] = df_data["reviewText"].astype(str)
+
+        # Add spaces after new line characters.
+        df_data["reviewText"] = df_data["reviewText"].progress_apply(
+            lambda x: x.replace("\n", " \n")
         )
 
         print("Counting words in each review text...")
@@ -218,8 +209,6 @@ class AmazonReviewDataSampler:
             rating_median=("overall", "median"),
             rating_min=("overall", "min"),
             rating_max=("overall", "max"),
-            feedback_count_median=("feedback_count", "median"),
-            helpful_count_median=("feedback_helpful_count", "median"),
         )
 
         # Bin review ratings into 2 bins;
