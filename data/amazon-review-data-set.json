@@ -1,0 +1,207 @@
+{
+    "categories":[
+       {
+          "name":"Amazon Fashion",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/AMAZON_FASHION_5.json.gz",
+          "reviews_count":3176,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/AMAZON_FASHION.csv",
+          "ratings_count":883636
+       },
+       {
+          "name":"All Beauty",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/All_Beauty_5.json.gz",
+          "reviews_count":5269,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/All_Beauty.csv",
+          "ratings_count":371345
+       },
+       {
+          "name":"Appliances",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Appliances_5.json.gz",
+          "reviews_count":2277,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Appliances.csv",
+          "ratings_count":602777
+       },
+       {
+          "name":"Arts, Crafts and Sewing",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Arts_Crafts_and_Sewing_5.json.gz",
+          "reviews_count":494485,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Arts_Crafts_and_Sewing.csv",
+          "ratings_count":2875917
+       },
+       {
+          "name":"Automotive",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Automotive_5.json.gz",
+          "reviews_count":1711519,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Automotive.csv",
+          "ratings_count":7990166
+       },
+       {
+          "name":"Books",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Books_5.json.gz",
+          "reviews_count":27164983,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Books.csv",
+          "ratings_count":51311621
+       },
+       {
+          "name":"CDs and Vinyl",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/CDs_and_Vinyl_5.json.gz",
+          "reviews_count":1443755,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/CDs_and_Vinyl.csv",
+          "ratings_count":4543369
+       },
+       {
+          "name":"Cell Phones and Accessories",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Cell_Phones_and_Accessories_5.json.gz",
+          "reviews_count":1128437,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Cell_Phones_and_Accessories.csv",
+          "ratings_count":10063255
+       },
+       {
+          "name":"Clothing, Shoes and Jewelry",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Clothing_Shoes_and_Jewelry_5.json.gz",
+          "reviews_count":11285464,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Clothing_Shoes_and_Jewelry.csv",
+          "ratings_count":32292099
+       },
+       {
+          "name":"Digital Music",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Digital_Music_5.json.gz",
+          "reviews_count":169781,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Digital_Music.csv",
+          "ratings_count":1584082
+       },
+       {
+          "name":"Electronics",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Electronics_5.json.gz",
+          "reviews_count":6739590,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Electronics.csv",
+          "ratings_count":20994353
+       },
+       {
+          "name":"Gift Cards",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Gift_Cards_5.json.gz",
+          "reviews_count":2972,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Gift_Cards.csv",
+          "ratings_count":147194
+       },
+       {
+          "name":"Grocery and Gourmet Food",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Grocery_and_Gourmet_Food_5.json.gz",
+          "reviews_count":1143860,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Grocery_and_Gourmet_Food.csv",
+          "ratings_count":5074160
+       },
+       {
+          "name":"Home and Kitchen",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Home_and_Kitchen_5.json.gz",
+          "reviews_count":6898955,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Home_and_Kitchen.csv",
+          "ratings_count":21928568
+       },
+       {
+          "name":"Industrial and Scientific",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Industrial_and_Scientific_5.json.gz",
+          "reviews_count":77071,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Industrial_and_Scientific.csv",
+          "ratings_count":1758333
+       },
+       {
+          "name":"Kindle Store",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Kindle_Store_5.json.gz",
+          "reviews_count":2222983,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Kindle_Store.csv",
+          "ratings_count":5722988
+       },
+       {
+          "name":"Luxury Beauty",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Luxury_Beauty_5.json.gz",
+          "reviews_count":34278,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Luxury_Beauty.csv",
+          "ratings_count":574628
+       },
+       {
+          "name":"Magazine Subscriptions",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Magazine_Subscriptions_5.json.gz",
+          "reviews_count":2375,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Magazine_Subscriptions.csv",
+          "ratings_count":89689
+       },
+       {
+          "name":"Movies and TV",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Movies_and_TV_5.json.gz",
+          "reviews_count":3410019,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Movies_and_TV.csv",
+          "ratings_count":8765568
+       },
+       {
+          "name":"Musical Instruments",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Musical_Instruments_5.json.gz",
+          "reviews_count":231392,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Musical_Instruments.csv",
+          "ratings_count":1512530
+       },
+       {
+          "name":"Office Products",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Office_Products_5.json.gz",
+          "reviews_count":800357,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Office_Products.csv",
+          "ratings_count":5581313
+       },
+       {
+          "name":"Patio, Lawn and Garden",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Patio_Lawn_and_Garden_5.json.gz",
+          "reviews_count":798415,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Patio_Lawn_and_Garden.csv",
+          "ratings_count":5236058
+       },
+       {
+          "name":"Pet Supplies",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Pet_Supplies_5.json.gz",
+          "reviews_count":2098325,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Pet_Supplies.csv",
+          "ratings_count":6542483
+       },
+       {
+          "name":"Prime Pantry",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Prime_Pantry_5.json.gz",
+          "reviews_count":137788,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Prime_Pantry.csv",
+          "ratings_count":471614
+       },
+       {
+          "name":"Software",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Software_5.json.gz",
+          "reviews_count":12805,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Software.csv",
+          "ratings_count":459436
+       },
+       {
+          "name":"Sports and Outdoors",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Sports_and_Outdoors_5.json.gz",
+          "reviews_count":2839940,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Sports_and_Outdoors.csv",
+          "ratings_count":12980837
+       },
+       {
+          "name":"Tools and Home Improvement",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Tools_and_Home_Improvement_5.json.gz",
+          "reviews_count":2070831,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Tools_and_Home_Improvement.csv",
+          "ratings_count":9015203
+       },
+       {
+          "name":"Toys and Games",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Toys_and_Games_5.json.gz",
+          "reviews_count":1828971,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Toys_and_Games.csv",
+          "ratings_count":8201231
+       },
+       {
+          "name":"Video Games",
+          "reviews_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Video_Games_5.json.gz",
+          "reviews_count":497577,
+          "ratings_url":"http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Video_Games.csv",
+          "ratings_count":2565349
+       }
+    ]
+ }
