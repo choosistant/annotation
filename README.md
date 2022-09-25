@@ -14,8 +14,8 @@ Sample review data:
 
 ```bash
 poetry run sample-amazon-data \
-    --input-path  data/raw/Office_Products_5.json.gz \
-    --output-dir data/processed \
+    --input-path data/raw/amazon-data-2018/reviews-all-beauty-5269.json.gz \
+    --output-dir data/processed/amazon-data-2018/ \
     --min-word-count 5 \
     --beta 0.4 \
     --n-items 5 \
